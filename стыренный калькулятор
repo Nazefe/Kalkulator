@@ -1,5 +1,7 @@
-import java.util.Scanner;
+// Нагло стырил код у фувпвыриен
 
+import java.util.Scanner;
+// Подкючаем стыренный код, а так же библеотеку со сканером
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -11,6 +13,7 @@ public class Main {
         double b = scan.nextDouble();
         double res = 0;
         double v =0;
+// Вводим 2 переменные, с 1 действием и продолжаем тырить код
         switch(destv){
             case "+": v = a + b;
                  break;
@@ -21,6 +24,7 @@ public class Main {
             case "/": v = a / b;
                 break;
         }
+// Вводим 3 переменные, с 2 действием и продолжаем тырить код
         System.out.print("\nВведите действие: ");
         String destv2 = scan.next();
         System.out.print("\nВведите третье число:");
@@ -36,5 +40,6 @@ public class Main {
                 break;
         }
         System.out.println(res);
+// Выводим результат 2 действий
     }
 }
