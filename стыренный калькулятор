@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Введите первое число: ");
+        double a = scan.nextDouble();
+        System.out.print("\nВведите действие: ");
+        String destv = scan.next();
+        System.out.print("\nВведите второе число: ");
+        double b = scan.nextDouble();
+        double res = 0;
+        double v =0;
+        switch(destv){
+            case "+": v = a + b;
+                 break;
+            case "-": v = a - b;
+                break;
+            case "*": v = a * b;
+                break;
+            case "/": v = a / b;
+                break;
+        }
+        System.out.print("\nВведите действие: ");
+        String destv2 = scan.next();
+        System.out.print("\nВведите третье число:");
+        double c = scan.nextDouble();
+        switch(destv2){
+            case "+": res = v + c;
+                break;
+            case "-": res = v - c;
+                break;
+            case "*": res = v * c;
+                break;
+            case "/": res = v / c;
+                break;
+        }
+        System.out.println(res);
+    }
+}
